@@ -1,0 +1,22 @@
+import numpy as np
+
+a=np.array([3,4,5,2])
+b=np.array([6,8,2,7])
+print(np.multiply(a,b))
+#lets perform matrix multiplication
+print(np.dot(a,b))
+print(a[a>2])
+#creating a 2d numpy array and calculating sum of each row and column
+a1=np.array([[3,5,2,5],[4,7,8,1]])
+print(a1.shape)
+print(a1.size)
+print(a1>7)
+print(np.sum(a1,axis=0))
+print(np.sum(a1,axis=1))
+print(np.arange(0,9).reshape(3,3)) #creating an array and then reshaping it
+print("\n")
+print(a1.reshape(1,8))
+#reshaping a 2d array into a 3d array
+print(a1.reshape(2,2,2))
+#BROADCASTING : allows arrays of different sizes to perform arithmetic operations
+print(a+b)
